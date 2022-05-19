@@ -1,0 +1,49 @@
+{
+    "private": true,
+    "name": "typescript-template",
+    "version": "1.0.0",
+    "description": "A template for the TypeScript projects.",
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "yarn clean && tsc -p .",
+        "start": "cross-env NODE_ENV=prod node dist/index.js",
+        "dev": "nodemon src/index.ts",
+        "generate-keys": "node scripts/rsa.js"
+    },
+    "author": "BurakBey",
+    "license": "MIT",
+    "dependencies": {
+        "@types/mysql": "^2.15.20",
+        "axios": "^0.24.0",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "crypto-js": "^4.1.1",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.2",
+        "fs": "^0.0.1-security",
+        "helmet": "^4.6.0",
+        "mongodb": "^3.6.9",
+        "mysql": "^2.18.1",
+        "node-rsa": "^1.1.1",
+        "nodejs-snowflake": "^1.6.2",
+        "path": "^0.12.7",
+        "typeorm": "^0.2.34",
+        "validator": "^13.7.0"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.19.1",
+        "@types/cors": "^2.8.12",
+        "@types/crypto-js": "^4.0.2",
+        "@types/express": "^4.17.13",
+        "@types/express-session": "^1.17.4",
+        "@types/node": "^14.14.10",
+        "@types/node-rsa": "^1.1.1",
+        "@types/validator": "^13.6.6",
+        "cross-env": "^7.0.3",
+        "nodemon": "^2.0.6",
+        "rimraf": "^3.0.2",
+        "ts-node": "^9.0.0",
+        "typescript": "^4.1.2"
+    }
+}
